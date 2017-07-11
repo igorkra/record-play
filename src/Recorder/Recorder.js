@@ -79,10 +79,7 @@ class Recorder extends Component {
       let audioUrl = window.URL.createObjectURL(nextRecord.audio);
       let recordAudio = new Audio(audioUrl);
       recordAudio.play()
-      // .then(() => {
-      //   this.startPlaying();
-      // })
-
+      
       this.startTimer(this.state.recordingTime, () => {
         this.startPlaying();
       });
