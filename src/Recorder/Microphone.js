@@ -1,6 +1,5 @@
 var mediaRecorder;
 var chunks = [];
-var constraints = { audio: true };
 
 navigator.getUserMedia = (navigator.getUserMedia ||
     navigator.webkitGetUserMedia ||

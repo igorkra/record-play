@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import { RaisedButton, FontIcon, LinearProgress } from 'material-ui';
 import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
-import { red500 } from 'material-ui/styles/colors';
 import Microphone from './Microphone';
 import RecorderControl from './RecorderControl';
 import axios from 'axios';
@@ -10,7 +9,7 @@ class Recorder extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      recordingTime: 1000,
+      recordingTime: 2000,
       currentSentence: null,
       currentRecord: null,
       sentences: [
